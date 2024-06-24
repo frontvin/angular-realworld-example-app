@@ -2,9 +2,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Article, ArticlesService, UserService } from '../../core';
-import { of } from 'rxjs/observable/of';
-import { concatMap } from 'rxjs/operators/concatMap';
-import { tap } from 'rxjs/operators/tap';
+import { concatMap, tap } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-favorite-button',

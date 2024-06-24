@@ -7,9 +7,7 @@ import { ReplaySubject } from 'rxjs/ReplaySubject';
 import { ApiService } from './api.service';
 import { JwtService } from './jwt.service';
 import { User } from '../models';
-import { map } from 'rxjs/operators/map';
-import { distinctUntilChanged } from 'rxjs/operators/distinctUntilChanged';
-
+import { map, distinctUntilChanged } from 'rxjs/operators';
 
 @Injectable()
 export class UserService {

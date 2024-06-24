@@ -3,8 +3,7 @@ import { ActivatedRouteSnapshot, Resolve, Router, RouterStateSnapshot } from '@a
 import { Observable } from 'rxjs/Observable';
 
 import { Article, ArticlesService, UserService } from '../core';
-import { catchError } from 'rxjs/operators/catchError';
-import { map } from 'rxjs/operators/map';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable()
 export class EditableArticleResolver implements Resolve<Article> {

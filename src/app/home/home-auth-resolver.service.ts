@@ -3,7 +3,7 @@ import { ActivatedRouteSnapshot, Resolve, Router, RouterStateSnapshot } from '@a
 import { Observable } from 'rxjs/Observable';
 
 import { UserService } from '../core';
-import { take } from 'rxjs/operators/take';
+import { take } from 'rxjs/operators';
 
 @Injectable()
 export class HomeAuthResolver implements Resolve<boolean> {
