@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-
+import { ActivatedRoute } from '@angular/router';
 import { ArticleListConfig, Profile } from '../core';
 
 @Component({
@@ -10,7 +9,6 @@ import { ArticleListConfig, Profile } from '../core';
 export class ProfileArticlesComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
-    private router: Router
   ) {}
 
   profile: Profile;
