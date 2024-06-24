@@ -107,7 +107,6 @@
       }
     }
   },
-  "defaultProject": "ang2-conduit",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
